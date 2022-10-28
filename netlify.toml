@@ -3,5 +3,5 @@
   [headers.values]
 	cache-control = '''
 	public,
-	max-age=3600
+	max-age=18000
 	'''
