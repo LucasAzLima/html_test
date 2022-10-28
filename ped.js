@@ -1,1 +1,3 @@
-console.log('hello there, I am JavaScript - x is ' + 3);
+function insertText () {
+    document.getElementById('td1').innerHTML = "Some text to enter";
+}
