@@ -1,1 +1,1 @@
-alert('hello there, I am JavaScript - x is ' + 3);
+console.log('hello there, I am JavaScript - x is ' + 3);
