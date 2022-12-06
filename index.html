@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>cache test</title>
+    <title>Recroding Event</title>
     <script type="text/javascript" src="ped.js"></script>
 </head>
-<body onload="insertText();">
-    Hello world, cache!
-    <table>
-        <tr>
-            <td id="td1"></td>
-        </tr>
-    </table>
+<body>
+ <h1>Recroding Event From Web View</h1>
+ <div id="main">
+  <button id="recordEvent" onclick="recordEvent()"> Record Event </button>
+ </div>
+ <script type="text/javascript">
+ function recordEvent(){
+  var eventName = "af_purchase"
+  var eventParams = "{\"af_revenue\":\"6.72\", \"af_content_type\": \"wallets\", \"af_content_id\": \"15854\"}";
+  webkit.messageHandlers.event.postMessage(eventName + "+" + eventParams);
+ }
+ </script>
 </body>
 </html>
