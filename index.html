@@ -17,6 +17,8 @@
   var eventName = "af_purchase"
   var eventParams = "{\"af_revenue\":\"6.72\", \"af_content_type\": \"wallets\", \"af_content_id\": \"15854\"}";
   window.ReactNativeWebView.postMessage(eventName + "+" + eventParams);
+var message = { data: 'Olá do site no iframe!' };
+window.parent.postMessage(message, '*');
  }
     </script>
     <a href="rngqlapp://organization/NgpiNTQ3ZGIyZi0yMzI0LTRhNjItOTM4Yy0yN2JkOWY1NDc3NTg=">open Quickstart</a>
